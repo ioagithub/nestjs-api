@@ -1,3 +1,148 @@
+L'API peut :
+
+ 
+
+Lister tous les produits
+
+Lister toutes les catégories 
+
+Récupérer un seul produit
+
+Créer un produit
+
+Modifier un produit
+
+Supprimer un produit
+
+S'authentifier :
+
+-   Seul les utilisateurs sont capables de créer, modifier et supprimer un produit. 
+
+-   Aucune authentification n'est requise pour Lister ou Récupérer)
+
+ 
+
+Données : 
+
+ 
+
+Toutes vos entités doivent comporter les champs timestamp created_at, and modified_at
+
+ 
+
+Produits :
+
+ 
+
+Vos produits doivent comporter les attributs suivants :
+
+name
+
+category
+
+SKU
+
+price
+
+quantity
+
+Categories have the following attributes:
+
+ 
+
+Seed / Import :
+
+ 
+
+Importer le contenu du fichier electronic-catalog.json dans votre base de données. 
+
+// electronic-catalog.json
+
+{
+
+  "products": [
+
+    {
+
+      "name": "Pong",
+
+      "category": "Games",
+
+      "sku": "A0001",
+
+      "price": 69.99,
+
+      "quantity": 20
+
+    },
+
+    {
+
+      "name": "GameStation 5",
+
+      "category": "Games",
+
+      "sku": "A0002",
+
+      "price": 269.99,
+
+      "quantity": 15
+
+    },
+
+    {
+
+      "name": "AP Oman PC - Aluminum",
+
+      "category": "Computers",
+
+      "sku": "A0003",
+
+      "price": 1399.99,
+
+      "quantity": 10
+
+    },
+
+    {
+
+      "name": "Fony UHD HDR 55\" 4k TV",
+
+      "category": "TVs and Accessories",
+
+      "sku": "A0004",
+
+      "price": 1399.99,
+
+      "quantity": 5
+
+    }
+
+  ],
+
+  "users": [
+
+    {
+
+      "name": "Bobby Fischer",
+
+      "email": "bobby@foo.com"
+
+    },
+
+    {
+
+      "name": "Betty Rubble",
+
+      "email": "betty@foo.com"
+
+    }
+
+  ]
+
+}
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
